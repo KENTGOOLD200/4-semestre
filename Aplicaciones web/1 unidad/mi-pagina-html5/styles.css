@@ -1,0 +1,82 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fa8282;
+    color: #333;
+}
+
+/* Estilos para los elementos principales de la estructura */
+header, nav, main, section, article, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #56a86b;
+    background-color: #e6a0b8;
+}
+
+/* Colores para los encabezados */
+h1, h2, h3 {
+    color: #0056b3;
+}
+
+/* Tamaño de fuente para los párrafos */
+p {
+    font-size: 16px;
+}
+
+/* Color para texto en negrita */
+strong {
+    color: #7c26d8;
+}
+
+/* Color para texto en cursiva */
+em {
+    color: #000000;
+}
+
+/* Estilos para tablas */
+table {
+    border-collapse: collapse;
+}
+
+/* Bordes para tablas y celdas */
+table, th, td {
+    border: 1px solid #df272a;
+}
+
+/* Espaciado y alineación en celdas de tabla */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espaciado para etiquetas de formulario */
+label {
+    margin-bottom: 5px;
+}
+
+/* Estilos para campos de entrada */
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #21c7e4;
+}
+
+/* Estilos para botones */
+button {
+    padding: 10px;
+    background-color: #0056b3;
+    color: #22b61b;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efecto hover para botones */
+button:hover {
+    background-color: #01489a;
+}
