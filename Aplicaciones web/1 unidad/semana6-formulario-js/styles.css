@@ -1,0 +1,73 @@
+/* Inicialización de archivo de estilos del formulario interactivo utilizando HTML, CSS y JavaScript
+/* Establece la fuente principal para todo el cuerpo del documento */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Aplica bordes redondeados a los principales elementos de la página */
+header, nav, main, section, footer, button {
+  border-radius: 10px;
+}
+
+/* Define el color del texto de los botones */
+button {
+  color: #ffffff;
+}
+
+/* Estilos personalizados para botones primarios */
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+}
+
+/* Efecto hover para botones primarios */
+.btn-primary:hover {
+  background-color: #2d140b;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #f8f9fa;
+  color: #16518c;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header, nav, main, section, footer {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  video, img, iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilo para campos válidos */
+input:valid {
+  border: 2px solid green;
+}
+
+/* Estilo para campos válidos después de ser tocados */
+input.tocado:valid {
+  border: 2px solid rgb(0, 95, 95);
+}
+
+/* Estilo para campos inválidos después de ser tocados */
+input.tocado:invalid {
+  border: 2px solid red;
+}
+
+/* Estilo para mensajes de error */
+small {
+  font-size: 0.9em;
+}
+
+/* Fin del archivo de estilos del formulario interactivo utilizando HTML, CSS y JavaScript */

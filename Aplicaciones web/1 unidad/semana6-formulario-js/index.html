@@ -1,0 +1,94 @@
+<!-- Inicialización del archivo HTML de formulario interactivo utilizando HTML, CSS y JavaScript -->
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html lang="es"> <!-- Idioma principal del documento: Español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad a dispositivos móviles -->
+  <title>Funnyanimals.com</title> <!-- Título de la página -->
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a hoja de estilos personalizada -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Funnyanimals.com</h1>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <!-- Botón para menú colapsable en pantallas pequeñas -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Elementos del menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <h2 class="text-center mb-4"><strong>Crea una cuenta para disfrutar mas de nuestro contenido!!</strong></h2>
+    <!-- Formulario de registro -->
+    <form id="registroForm" novalidate>
+      <!-- Campo: Nombre -->
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+        <small class="text-danger" id="errorNombre"></small>
+      </div>
+      <!-- Campo: Correo Electrónico -->
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+        <small class="text-danger" id="errorCorreo"></small>
+      </div>
+      <!-- Campo: Contraseña -->
+      <div class="form-group">
+        <label for="contraseña">Contraseña</label>
+        <input type="password" class="form-control" id="contraseña" required>
+        <small class="text-danger" id="errorContraseña"></small>
+      </div>
+      <!-- Campo: Confirmar Contraseña -->
+      <div class="form-group">
+        <label for="confirmar">Confirmar Contraseña</label>
+        <input type="password" class="form-control" id="confirmar" required>
+        <small class="text-danger" id="errorConfirmar"></small>
+      </div>
+      <!-- Campo: Edad -->
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" class="form-control" id="edad" required>
+        <small class="text-danger" id="errorEdad"></small>
+      </div>
+      <!-- Botones del formulario -->
+      <button type="submit" class="btn btn-primary" id="btnEnviar" disabled>Crear Cuenta</button>
+      <button type="reset" class="btn btn-secondary ml-2">Reiniciar</button>
+    </form>
+  </main>
+  
+  <!-- Script de validación personalizado -->
+  <script src="script.js"></script>
+
+  <!-- Pie de página -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2025 Funnyanimals.com | 
+      <a href="#">Política de Privacidad</a> | 
+      <a href="#">Términos de Servicio</a>
+    </p>
+  </footer>
+
+  <!-- Scripts de Bootstrap y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- Fin del archivo HTML del formulario interactivo utilizando HTML, CSS y JavaScript -->

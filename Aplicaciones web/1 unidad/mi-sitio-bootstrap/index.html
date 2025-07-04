@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html lang="es"> <!-- Idioma principal del documento: Español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptabilidad a dispositivos móviles -->
+    <title>Funnyanimals.com</title> <!-- Título de la página -->
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a hoja de estilos personalizada -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Funnyanimals.com</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <!-- Botón para menú colapsable en pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Elementos del menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-4">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+               <div class="card">
+                    <img src="assets/img/ardilla.jpg" class="card-img-top img-fluid" alt="Imagen representativa">
+                    <div class="card-body">
+                        <h3 class="card-title">Wild y Random</h3>
+                        <p class="card-text">Disfruta de nuestro contenido de animales haciendo cosas random y graciosas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/img/c690f906-44c3-425f-9037-3e3d630e44cd_16-9-discover-aspect-ratio_default_1280704.jpg" class="card-img-top img-fluid" alt="Imagen representativa">
+                    <div class="card-body">
+                        <h3 class="card-title">Enojones y adorables</h3>
+                        <p class="card-text">Son los gruñones mas alegrres del reino amimal!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/img/happy-smiling-pet-dog-wearing-600nw-2499486393.webp" class="card-img-top img-fluid" alt="Imagen representativa">
+                    <div class="card-body">
+                        <h3 class="card-title">El mejor amigo del hombre</h3>
+                        <p class="card-text">Loa perros son los animales más adorables de todos!!.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="my-4">
+            <h2>SUSCRIBETE PARA COMENTAR O DAR SUJERENCIAS!!</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3" placeholder="Ingresa tus comentarios"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <section class="my-4">
+            <h2>LAS MEJORES ANIMALADAS DE YOUTUBE AQUÍ</h2>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Ver /Ocultar Contenido
+            </button>
+            <div class="collapse mt-3" id="collapseExample">
+                <div class="card card-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQ584XuFypY?si=2SXJEcbkiGxBDRlD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Funnyanimals.com | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
